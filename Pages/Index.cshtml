@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+
+<form method="post">
+    <h1>BMI checker</h1>
+    <p>Fill your details below, and we'll tell you your body mass index, Good luck!</p>
+    <br />
+    <label>Whats your Name?</label>
+    <input type="text" asp-for="name" />
+    <br />
+    <br />
+    <label>Tell me your age</label>
+    <input type="number" asp-for="age" />
+    <br />
+    <br />
+    <label>How much do you weigh?</label>
+    <input type="number" asp-for="weight" />
+    <br />
+    <br />
+    <label>Whats your height?</label>
+    <input type="number" asp-for="height" />
+    <br />
+    <br />
+    <button type="submit">Check BMI</button>
+</form>
+
+<h2>@Model.Result</h2>
